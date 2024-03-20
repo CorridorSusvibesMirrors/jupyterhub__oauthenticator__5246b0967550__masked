@@ -1,0 +1,12 @@
+# autodoc_traits needs to inspect the oauthenticator module, so we also install
+# oauthenticator itself.
+# Note: the install command must be ran from the oauthenticator root directory
+-e ./
+
+autodoc-traits
+importlib_metadata>=3.6; python_version < '3.10'
+myst-parser
+sphinx-autobuild
+sphinx-book-theme
+sphinx-copybutton
+sphinxext-rediraffe
